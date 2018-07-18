@@ -16,11 +16,19 @@ https://lbs.amap.com/dev/key/app
 ![Image text](https://github.com/gorewaiiieuo/Aigongjiao/blob/master/img/6.png)
 
 其中：
- -Game包：提供客户等待车时消遣娱乐的两个小游戏
- -historyRecyclerAdapater包：实现起始点搜索历史记录的RecyclerView
- -Navigation包：高德地图sdk使用的相关代码
- -routeDisplayAdapter包：实现显示规划线路的RecyclerView
- -searchLineUtils包：实现到站提醒和路线号搜索该站点过站功能
- -searchStationUtils包：实现站点名搜索线路功能
- -SharedPreferencesUtils包：用于保存起始点搜索历史到本地
- -welcomActivity包：实现应用启动前欢迎界面
+ 
+  -Game包：提供客户等待车时消遣娱乐的两个小游戏
+ 
+  -historyRecyclerAdapater包：实现起始点搜索历史记录的RecyclerView
+ 
+  -Navigation包：高德地图sdk使用的相关代码
+ 
+  -routeDisplayAdapter包：实现显示规划线路的RecyclerView
+ 
+  -searchLineUtils包：实现到站提醒和路线号搜索该站点过站功能
+ 
+  -searchStationUtils包：实现站点名搜索线路功能
+ 
+  -SharedPreferencesUtils包：用于保存起始点搜索历史到本地
+ 
+  -welcomActivity包：实现应用启动前欢迎界面
