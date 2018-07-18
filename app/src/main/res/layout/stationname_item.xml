@@ -10,7 +10,7 @@
         android:layout_marginTop="50dp"
         android:src="@drawable/plot2"/>
 
-    <com.example.a20182.searchLineUtils.TextViewVertical
+    <com.example.guohuayu.searchLineUtils.TextViewVertical
         android:id="@+id/stationname"
         android:layout_width="20dp"
         android:layout_height="120dp"

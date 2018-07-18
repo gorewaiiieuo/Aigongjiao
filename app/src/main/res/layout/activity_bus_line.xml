@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".searchLineUtils.notificationUtils.BusLineActivity">
+    tools:context="com.example.guohuayu.searchLineUtils.notificationUtils.BusLineActivity">
 
     <com.amap.api.maps2d.MapView
         android:id="@+id/busMap"
@@ -21,7 +21,7 @@
         android:background="#ffffff"
         app:layout_constraintTop_toBottomOf="@+id/busMap">
 
-        <com.example.a20182.searchLineUtils.HorizontalListView
+        <com.example.guohuayu.searchLineUtils.HorizontalListView
             android:id="@+id/show_name_station"
             android:layout_width="match_parent"
             android:layout_height="260dp"

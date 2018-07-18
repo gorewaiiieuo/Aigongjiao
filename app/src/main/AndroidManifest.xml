@@ -40,17 +40,17 @@
         <service android:name="com.amap.api.location.APSService" />
 
         <activity
-            android:name=".MainFrameActivity"
+            android:name="com.example.guohuayu.MainFrameActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
         </activity>
-        <activity android:name=".Navigation.RouteSelectActivity" />
-        <activity android:name=".Game.FlappyBird.FlappyBirdActivity" />
-        <activity android:name=".Game.Tetris.TetrisActivityAW" />
-        <activity android:name=".searchLineUtils.SearchLineActivity" />
-        <activity android:name=".SearchStationActivity" />
-        <activity android:name=".searchLineUtils.notificationUtils.BusLineActivity" />
-        <activity android:name=".welcomActivity.WelcomActivity">
+        <activity android:name="com.example.guohuayu.Navigation.RouteSelectActivity" />
+        <activity android:name="com.example.guohuayu.Game.FlappyBird.FlappyBirdActivity" />
+        <activity android:name="com.example.guohuayu.Game.Tetris.TetrisActivityAW" />
+        <activity android:name="com.example.guohuayu.searchLineUtils.SearchLineActivity" />
+        <activity android:name="com.example.guohuayu.SearchStationActivity" />
+        <activity android:name="com.example.guohuayu.searchLineUtils.notificationUtils.BusLineActivity" />
+        <activity android:name="com.example.guohuayu.welcomActivity.WelcomActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -58,7 +58,7 @@
             </intent-filter>
         </activity>
         <!-- 注册服务 -->
-        <service android:name="com.example.a20182.searchLineUtils.notificationUtils.ServiceSubclass">
+        <service android:name="com.example.a20182.com.example.guohuayu.searchLineUtils.notificationUtils.ServiceSubclass">
             <intent-filter >
                 <action android:name="windowService"/>
             </intent-filter>

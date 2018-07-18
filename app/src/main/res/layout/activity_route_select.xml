@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Navigation.RouteSelectActivity">
+    tools:context="com.example.guohuayu.Navigation.RouteSelectActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

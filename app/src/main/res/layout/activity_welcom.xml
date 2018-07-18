@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.a20182.welcomActivity.WelcomActivity"
+    tools:context="com.example.a20182.com.example.guohuayu.welcomActivity.WelcomActivity"
     >
 
 
