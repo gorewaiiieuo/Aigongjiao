@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/icon_history" />
+
+    <TextView
+        android:id="@+id/tv_searchHistoryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="686号线"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:id="@+id/ibtn_cancelHistory"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/tv_searchHistoryItem"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_toEndOf="@+id/tv_searchHistoryItem"
+        android:layout_toRightOf="@+id/tv_searchHistoryItem"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/delete30" />
+</RelativeLayout>

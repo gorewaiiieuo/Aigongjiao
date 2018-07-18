@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout_main">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:layout_toRightOf="@+id/backBtn"
+        android:layout_toEndOf="@+id/backBtn"
+        android:layout_toLeftOf="@+id/route_bus"
+        android:layout_toStartOf="@+id/route_bus"
+        android:background="@drawable/search_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/search_edit_text"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@+id/dosearch"
+            android:layout_alignBottom="@+id/dosearch"
+            android:layout_toLeftOf="@+id/dosearch"
+            android:layout_toStartOf="@+id/dosearch"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="10dp"
+            android:dropDownSelector="#BBFFFF"
+            android:hint="搜索地点"
+            android:imeOptions="actionSearch"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColorHint="#9B9B9B"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/search_edit_delete"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/delete"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/route_bus"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="导航" />
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/route_bus">
+    </com.amap.api.maps.MapView>
+
+
+</RelativeLayout>

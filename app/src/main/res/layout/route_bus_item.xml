@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8sp"
+    android:layout_marginRight="8sp"
+    android:layout_marginTop="10sp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_walkend"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14sp"
+            android:layout_marginStart="14sp"
+            android:src="@drawable/busitem" />
+
+        <TextView
+
+            android:id="@+id/tv_bus_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginStart="23sp"
+            android:layout_marginTop="6sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/iv_walkend"
+            android:layout_toRightOf="@+id/iv_walkend"
+            android:text="大学城一中 公交站"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_below="@+id/tv_bus_start"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40sp"
+            android:layout_marginStart="40sp"
+            android:src="@drawable/blueline"/>
+
+        <TextView
+            android:id="@+id/tv_busInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_bus_start"
+            android:layout_below="@+id/tv_bus_start"
+            android:layout_marginLeft="46sp"
+            android:layout_marginTop="20sp"
+            android:text="271路（增加安置区-学府悦园第二小学）" />
+
+        <TextView
+            android:id="@+id/tv_busStationInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_busInfo"
+            android:layout_below="@+id/tv_busInfo"
+            android:textColor="#6495ED" />
+
+        <TextView
+            android:id="@+id/tv_bus_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_bus_start"
+            android:layout_alignStart="@+id/tv_bus_start"
+            android:layout_marginBottom="10px"
+            android:layout_below="@id/tv_busStationInfo"
+            android:text="宠大幼儿园 公交站"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
