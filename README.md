@@ -5,6 +5,12 @@
 
 注意：若提示高德地图key问题需要下列网站注册个人key：
 https://lbs.amap.com/dev/key/app
+ 
+ 并将注册得到的key，替换到AndroidManifest.xml文件下的application标签下以下红框位置：
+ 
+ ![Image text](https://github.com/gorewaiiieuo/Aigongjiao/blob/master/img/7.png)
+ 
+ 
 
 界面展示：
 
