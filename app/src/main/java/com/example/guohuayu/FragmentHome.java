@@ -526,8 +526,15 @@ public class FragmentHome extends Fragment
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if(startTv.isFocused()) {
-                    //task = PoiSearchTask.getInstance(pop.getContext()).setData(adapter, poi_lv, myLoc);
+//                    if(!startTv.getText().toString().equals("")){
+//                        poi_lv.setVisibility(View.VISIBLE);
+//                        rv_searchHistory.setVisibility(View.GONE);
+//                    }
                     PoiSearchTask.getInstance(pop.getContext()).setData(adapter, poi_lv, myLoc).onSearch(startTv.getText().toString().trim(), citycode);
+//                    if(endTv.getText().toString().equals("")){
+//                        poi_lv.setVisibility(View.GONE);
+//                        rv_searchHistory.setVisibility(View.VISIBLE);
+//                    }
                 }
             }
 
@@ -550,7 +557,15 @@ public class FragmentHome extends Fragment
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if(endTv.isFocused()) {
+                    if(!endTv.getText().toString().equals("")){
+                        poi_lv.setVisibility(View.VISIBLE);
+                        rv_searchHistory.setVisibility(View.GONE);
+                    }
                     PoiSearchTask.getInstance(pop.getContext()).setData(adapter, poi_lv).onSearch(endTv.getText().toString().trim(), citycode);
+                    if(endTv.getText().toString().equals("")){
+                        poi_lv.setVisibility(View.GONE);
+                        rv_searchHistory.setVisibility(View.VISIBLE);
+                    }
                 }
             }
 
